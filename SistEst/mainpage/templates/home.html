@@ -1,0 +1,56 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="introducao">
+   <div>
+       <h1 class="titulo1" style="vertical-align: bottom;">Sistema de Estacionamento <br>(SistEst)</h1>
+       <div class="resumo">
+           <p>Controlar o seu estacionamento nunca foi tão 
+               fácil como agora! A ESTACIONE NET é o app para 
+               gerenciamento de estacionamento de pequeno e 
+               médio porte mais barato do Brasil. É o que o 
+               seu negócio precisa!</p>
+       </div>
+   </div>
+   <div  class="imagens">
+       <img src="{% static 'media/princ_SistEst.png' %}" style="width: 400px;">
+   </div>
+</div>
+<div>
+   <h1 class="titulo1">A gestão do seu estacionamento facilitado é <br>
+       com o <b>SistEst</b></h1>
+</div>
+<div class="card1">
+   <div class="card2">
+       <img class="img_card" src="{% static 'media/icons/moedas.png' %}">
+       <p class="titulo2">Controle de caixa</p>
+       <p class="texto1">Abertura e fechamento de caixa com relatórios. 
+           Sistema simples integrado com seu aplicativo Android. 
+           Com as opções de cobrança do estacionamento por preço ou por tempo.</p>
+   </div>
+   <div class="card2">
+       <img class="img_card" src="{% static 'media/icons/fotografia.png' %}">
+       <p class="titulo2">Captura da placa com a câmera</p>
+       <p class="texto1">Utilize a câmera do seu smartfone 
+           para capturar a placa do carro. Com isso você deixa 
+           seu negócio mais ágil e evitar erros de digitação.</p>
+   </div>
+</div>
+<div class="card1">
+   <div class="card2">
+       <img class="img_card" src="{% static 'media/icons/desligar.png' %}">
+       <p class="titulo2">Aplicativo Off-line</p>
+       <p class="texto1">O aplicativo não necessita de internet 
+           para funcionar. Melhorando o custo e eficiência 
+           no estacionamento.</p>
+   </div>
+   <div class="card2">
+       <img class="img_card" src="{% static 'media/icons/estacionamento.png' %}">
+       <p class="titulo2">Tipos de Estacionamentos</p>
+       <p class="texto1">Rotativo, Cobrança por tempo e Mensalistas.</p>
+   </div>
+</div>
+
+{% endblock %}
